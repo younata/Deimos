@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		891CC54D1BAB434B00661B66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891CC54C1BAB434B00661B66 /* AppDelegate.swift */; };
+		891CC54F1BAB434B00661B66 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 891CC54E1BAB434B00661B66 /* GameScene.sks */; };
+		891CC5511BAB434B00661B66 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891CC5501BAB434B00661B66 /* GameScene.swift */; };
+		891CC5531BAB434B00661B66 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891CC5521BAB434B00661B66 /* GameViewController.swift */; };
+		891CC5561BAB434B00661B66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 891CC5541BAB434B00661B66 /* Main.storyboard */; };
+		891CC5581BAB434B00661B66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 891CC5571BAB434B00661B66 /* Assets.xcassets */; };
+		891CC55B1BAB434B00661B66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 891CC5591BAB434B00661B66 /* LaunchScreen.storyboard */; };
+		891CC5661BAB434B00661B66 /* DeimosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891CC5651BAB434B00661B66 /* DeimosTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		891CC5621BAB434B00661B66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 891CC5411BAB434B00661B66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 891CC5481BAB434B00661B66;
+			remoteInfo = Deimos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		891CC5491BAB434B00661B66 /* Deimos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deimos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		891CC54C1BAB434B00661B66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		891CC54E1BAB434B00661B66 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		891CC5501BAB434B00661B66 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		891CC5521BAB434B00661B66 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		891CC5551BAB434B00661B66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		891CC5571BAB434B00661B66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		891CC55A1BAB434B00661B66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		891CC55C1BAB434B00661B66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		891CC5611BAB434B00661B66 /* DeimosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeimosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		891CC5651BAB434B00661B66 /* DeimosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeimosTests.swift; sourceTree = "<group>"; };
+		891CC5671BAB434B00661B66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		891CC5461BAB434B00661B66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		891CC55E1BAB434B00661B66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		891CC5401BAB434B00661B66 = {
+			isa = PBXGroup;
+			children = (
+				891CC54B1BAB434B00661B66 /* Deimos */,
+				891CC5641BAB434B00661B66 /* DeimosTests */,
+				891CC54A1BAB434B00661B66 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		891CC54A1BAB434B00661B66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				891CC5491BAB434B00661B66 /* Deimos.app */,
+				891CC5611BAB434B00661B66 /* DeimosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		891CC54B1BAB434B00661B66 /* Deimos */ = {
+			isa = PBXGroup;
+			children = (
+				891CC54C1BAB434B00661B66 /* AppDelegate.swift */,
+				891CC54E1BAB434B00661B66 /* GameScene.sks */,
+				891CC5501BAB434B00661B66 /* GameScene.swift */,
+				891CC5521BAB434B00661B66 /* GameViewController.swift */,
+				891CC5541BAB434B00661B66 /* Main.storyboard */,
+				891CC5571BAB434B00661B66 /* Assets.xcassets */,
+				891CC5591BAB434B00661B66 /* LaunchScreen.storyboard */,
+				891CC55C1BAB434B00661B66 /* Info.plist */,
+			);
+			path = Deimos;
+			sourceTree = "<group>";
+		};
+		891CC5641BAB434B00661B66 /* DeimosTests */ = {
+			isa = PBXGroup;
+			children = (
+				891CC5651BAB434B00661B66 /* DeimosTests.swift */,
+				891CC5671BAB434B00661B66 /* Info.plist */,
+			);
+			path = DeimosTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		891CC5481BAB434B00661B66 /* Deimos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 891CC56A1BAB434B00661B66 /* Build configuration list for PBXNativeTarget "Deimos" */;
+			buildPhases = (
+				891CC5451BAB434B00661B66 /* Sources */,
+				891CC5461BAB434B00661B66 /* Frameworks */,
+				891CC5471BAB434B00661B66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Deimos;
+			productName = Deimos;
+			productReference = 891CC5491BAB434B00661B66 /* Deimos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		891CC5601BAB434B00661B66 /* DeimosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 891CC56D1BAB434B00661B66 /* Build configuration list for PBXNativeTarget "DeimosTests" */;
+			buildPhases = (
+				891CC55D1BAB434B00661B66 /* Sources */,
+				891CC55E1BAB434B00661B66 /* Frameworks */,
+				891CC55F1BAB434B00661B66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				891CC5631BAB434B00661B66 /* PBXTargetDependency */,
+			);
+			name = DeimosTests;
+			productName = DeimosTests;
+			productReference = 891CC5611BAB434B00661B66 /* DeimosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		891CC5411BAB434B00661B66 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Rachel Brindle";
+				TargetAttributes = {
+					891CC5481BAB434B00661B66 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					891CC5601BAB434B00661B66 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 891CC5481BAB434B00661B66;
+					};
+				};
+			};
+			buildConfigurationList = 891CC5441BAB434B00661B66 /* Build configuration list for PBXProject "Deimos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 891CC5401BAB434B00661B66;
+			productRefGroup = 891CC54A1BAB434B00661B66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				891CC5481BAB434B00661B66 /* Deimos */,
+				891CC5601BAB434B00661B66 /* DeimosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		891CC5471BAB434B00661B66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				891CC54F1BAB434B00661B66 /* GameScene.sks in Resources */,
+				891CC55B1BAB434B00661B66 /* LaunchScreen.storyboard in Resources */,
+				891CC5581BAB434B00661B66 /* Assets.xcassets in Resources */,
+				891CC5561BAB434B00661B66 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		891CC55F1BAB434B00661B66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		891CC5451BAB434B00661B66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				891CC5511BAB434B00661B66 /* GameScene.swift in Sources */,
+				891CC5531BAB434B00661B66 /* GameViewController.swift in Sources */,
+				891CC54D1BAB434B00661B66 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		891CC55D1BAB434B00661B66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				891CC5661BAB434B00661B66 /* DeimosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		891CC5631BAB434B00661B66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 891CC5481BAB434B00661B66 /* Deimos */;
+			targetProxy = 891CC5621BAB434B00661B66 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		891CC5541BAB434B00661B66 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				891CC5551BAB434B00661B66 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		891CC5591BAB434B00661B66 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				891CC55A1BAB434B00661B66 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		891CC5681BAB434B00661B66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		891CC5691BAB434B00661B66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		891CC56B1BAB434B00661B66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Deimos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rachelbrindle.Deimos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		891CC56C1BAB434B00661B66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Deimos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rachelbrindle.Deimos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		891CC56E1BAB434B00661B66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = DeimosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rachelbrindle.DeimosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Deimos.app/Deimos";
+			};
+			name = Debug;
+		};
+		891CC56F1BAB434B00661B66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DeimosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rachelbrindle.DeimosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Deimos.app/Deimos";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		891CC5441BAB434B00661B66 /* Build configuration list for PBXProject "Deimos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				891CC5681BAB434B00661B66 /* Debug */,
+				891CC5691BAB434B00661B66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		891CC56A1BAB434B00661B66 /* Build configuration list for PBXNativeTarget "Deimos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				891CC56B1BAB434B00661B66 /* Debug */,
+				891CC56C1BAB434B00661B66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		891CC56D1BAB434B00661B66 /* Build configuration list for PBXNativeTarget "DeimosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				891CC56E1BAB434B00661B66 /* Debug */,
+				891CC56F1BAB434B00661B66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 891CC5411BAB434B00661B66 /* Project object */;
+}
