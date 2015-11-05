@@ -8,13 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		891CC54D1BAB434B00661B66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891CC54C1BAB434B00661B66 /* AppDelegate.swift */; };
-		891CC54F1BAB434B00661B66 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 891CC54E1BAB434B00661B66 /* GameScene.sks */; };
 		891CC5511BAB434B00661B66 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891CC5501BAB434B00661B66 /* GameScene.swift */; };
 		891CC5531BAB434B00661B66 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891CC5521BAB434B00661B66 /* GameViewController.swift */; };
-		891CC5561BAB434B00661B66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 891CC5541BAB434B00661B66 /* Main.storyboard */; };
 		891CC5581BAB434B00661B66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 891CC5571BAB434B00661B66 /* Assets.xcassets */; };
 		891CC55B1BAB434B00661B66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 891CC5591BAB434B00661B66 /* LaunchScreen.storyboard */; };
-		891CC5661BAB434B00661B66 /* DeimosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891CC5651BAB434B00661B66 /* DeimosTests.swift */; };
+		891CC5711BAB488000661B66 /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 891CC5701BAB488000661B66 /* PureLayout.framework */; };
+		891CC5751BAB48EA00661B66 /* PureLayout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 891CC5701BAB488000661B66 /* PureLayout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		891CC5781BAB48F800661B66 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 891CC5761BAB48F800661B66 /* Nimble.framework */; };
+		891CC5791BAB48F800661B66 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 891CC5771BAB48F800661B66 /* Quick.framework */; };
+		891CC57A1BAB48FF00661B66 /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 891CC5761BAB48F800661B66 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		891CC57B1BAB48FF00661B66 /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 891CC5771BAB48F800661B66 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		892F9A6B1BE87551002F181F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9A6A1BE87551002F181F /* AppDelegate.swift */; };
+		892F9A6D1BE87551002F181F /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9A6C1BE87551002F181F /* GameScene.swift */; };
+		892F9A741BE87551002F181F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 892F9A721BE87551002F181F /* MainMenu.xib */; };
+		892F9A891BE87589002F181F /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 892F9A871BE87589002F181F /* Nimble.framework */; };
+		892F9A8A1BE87589002F181F /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 892F9A881BE87589002F181F /* Quick.framework */; };
+		892F9A8C1BE875A5002F181F /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 892F9A871BE87589002F181F /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		892F9A8D1BE875A5002F181F /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 892F9A881BE87589002F181F /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		892F9A8F1BE877A1002F181F /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9A8E1BE877A1002F181F /* Character.swift */; };
+		892F9A911BE95B39002F181F /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9A901BE95B39002F181F /* Math.swift */; };
+		892F9A931BE9B251002F181F /* MovementComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9A921BE9B251002F181F /* MovementComponent.swift */; };
+		892F9A951BE9B2ED002F181F /* PositionComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9A941BE9B2ED002F181F /* PositionComponent.swift */; };
+		892F9A971BE9B445002F181F /* MathSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9A961BE9B445002F181F /* MathSpecs.swift */; };
+		892F9A9A1BE9C54F002F181F /* RenderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9A991BE9C54F002F181F /* RenderComponent.swift */; };
+		892F9A9C1BE9D061002F181F /* PhysicsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9A9B1BE9D061002F181F /* PhysicsComponent.swift */; };
+		892F9AA41BEBCC57002F181F /* InputComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9AA31BEBCC57002F181F /* InputComponent.swift */; };
+		892F9AA51BEBCC57002F181F /* InputComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9AA31BEBCC57002F181F /* InputComponent.swift */; };
+		892F9AA71BEBD3E1002F181F /* InputSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9AA61BEBD3E1002F181F /* InputSource.swift */; };
+		892F9AA81BEBD3E1002F181F /* InputSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9AA61BEBD3E1002F181F /* InputSource.swift */; };
+		892F9AAB1BEBD54A002F181F /* KeyboardControlInputSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9AAA1BEBD54A002F181F /* KeyboardControlInputSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,21 +47,75 @@
 			remoteGlobalIDString = 891CC5481BAB434B00661B66;
 			remoteInfo = Deimos;
 		};
+		892F9A7B1BE87551002F181F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 891CC5411BAB434B00661B66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 892F9A671BE87551002F181F;
+			remoteInfo = "Deimos-OSX";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		891CC5741BAB48D600661B66 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				891CC57A1BAB48FF00661B66 /* Nimble.framework in Embed Frameworks */,
+				891CC57B1BAB48FF00661B66 /* Quick.framework in Embed Frameworks */,
+				891CC5751BAB48EA00661B66 /* PureLayout.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		892F9A8B1BE87597002F181F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				892F9A8C1BE875A5002F181F /* Nimble.framework in Embed Frameworks */,
+				892F9A8D1BE875A5002F181F /* Quick.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		891CC5491BAB434B00661B66 /* Deimos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deimos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		891CC54C1BAB434B00661B66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		891CC54E1BAB434B00661B66 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		891CC5501BAB434B00661B66 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		891CC5521BAB434B00661B66 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		891CC5551BAB434B00661B66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		891CC5571BAB434B00661B66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		891CC55A1BAB434B00661B66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		891CC55C1BAB434B00661B66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		891CC5611BAB434B00661B66 /* DeimosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeimosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		891CC5651BAB434B00661B66 /* DeimosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeimosTests.swift; sourceTree = "<group>"; };
 		891CC5671BAB434B00661B66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		891CC5701BAB488000661B66 /* PureLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PureLayout.framework; path = ../Carthage/Build/iOS/PureLayout.framework; sourceTree = "<group>"; };
+		891CC5761BAB48F800661B66 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = ../Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		891CC5771BAB48F800661B66 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = ../Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		892F9A681BE87551002F181F /* Deimos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deimos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		892F9A6A1BE87551002F181F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		892F9A6C1BE87551002F181F /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		892F9A731BE87551002F181F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		892F9A751BE87551002F181F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		892F9A7A1BE87551002F181F /* Deimos-OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Deimos-OSXTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		892F9A801BE87551002F181F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		892F9A871BE87589002F181F /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = ../Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
+		892F9A881BE87589002F181F /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = ../Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
+		892F9A8E1BE877A1002F181F /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		892F9A901BE95B39002F181F /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		892F9A921BE9B251002F181F /* MovementComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovementComponent.swift; sourceTree = "<group>"; };
+		892F9A941BE9B2ED002F181F /* PositionComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionComponent.swift; sourceTree = "<group>"; };
+		892F9A961BE9B445002F181F /* MathSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathSpecs.swift; sourceTree = "<group>"; };
+		892F9A991BE9C54F002F181F /* RenderComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenderComponent.swift; sourceTree = "<group>"; };
+		892F9A9B1BE9D061002F181F /* PhysicsComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsComponent.swift; sourceTree = "<group>"; };
+		892F9AA31BEBCC57002F181F /* InputComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputComponent.swift; sourceTree = "<group>"; };
+		892F9AA61BEBD3E1002F181F /* InputSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputSource.swift; sourceTree = "<group>"; };
+		892F9AAA1BEBD54A002F181F /* KeyboardControlInputSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardControlInputSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				891CC5711BAB488000661B66 /* PureLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +131,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				891CC5781BAB48F800661B66 /* Nimble.framework in Frameworks */,
+				891CC5791BAB48F800661B66 /* Quick.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		892F9A651BE87551002F181F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		892F9A771BE87551002F181F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				892F9A891BE87589002F181F /* Nimble.framework in Frameworks */,
+				892F9A8A1BE87589002F181F /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +160,8 @@
 			children = (
 				891CC54B1BAB434B00661B66 /* Deimos */,
 				891CC5641BAB434B00661B66 /* DeimosTests */,
+				892F9A691BE87551002F181F /* Deimos-OSX */,
+				892F9A7D1BE87551002F181F /* Deimos-OSXTests */,
 				891CC54A1BAB434B00661B66 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +171,8 @@
 			children = (
 				891CC5491BAB434B00661B66 /* Deimos.app */,
 				891CC5611BAB434B00661B66 /* DeimosTests.xctest */,
+				892F9A681BE87551002F181F /* Deimos.app */,
+				892F9A7A1BE87551002F181F /* Deimos-OSXTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,13 +181,12 @@
 			isa = PBXGroup;
 			children = (
 				891CC54C1BAB434B00661B66 /* AppDelegate.swift */,
-				891CC54E1BAB434B00661B66 /* GameScene.sks */,
-				891CC5501BAB434B00661B66 /* GameScene.swift */,
 				891CC5521BAB434B00661B66 /* GameViewController.swift */,
-				891CC5541BAB434B00661B66 /* Main.storyboard */,
+				891CC5501BAB434B00661B66 /* GameScene.swift */,
 				891CC5571BAB434B00661B66 /* Assets.xcassets */,
 				891CC5591BAB434B00661B66 /* LaunchScreen.storyboard */,
 				891CC55C1BAB434B00661B66 /* Info.plist */,
+				891CC5701BAB488000661B66 /* PureLayout.framework */,
 			);
 			path = Deimos;
 			sourceTree = "<group>";
@@ -96,10 +194,58 @@
 		891CC5641BAB434B00661B66 /* DeimosTests */ = {
 			isa = PBXGroup;
 			children = (
-				891CC5651BAB434B00661B66 /* DeimosTests.swift */,
+				891CC5761BAB48F800661B66 /* Nimble.framework */,
+				891CC5771BAB48F800661B66 /* Quick.framework */,
 				891CC5671BAB434B00661B66 /* Info.plist */,
 			);
 			path = DeimosTests;
+			sourceTree = "<group>";
+		};
+		892F9A691BE87551002F181F /* Deimos-OSX */ = {
+			isa = PBXGroup;
+			children = (
+				892F9A6A1BE87551002F181F /* AppDelegate.swift */,
+				892F9A6C1BE87551002F181F /* GameScene.swift */,
+				892F9A8E1BE877A1002F181F /* Character.swift */,
+				892F9A981BE9C53C002F181F /* Components */,
+				892F9AA91BEBD501002F181F /* Player Input */,
+				892F9A901BE95B39002F181F /* Math.swift */,
+				892F9A721BE87551002F181F /* MainMenu.xib */,
+				892F9A751BE87551002F181F /* Info.plist */,
+			);
+			path = "Deimos-OSX";
+			sourceTree = "<group>";
+		};
+		892F9A7D1BE87551002F181F /* Deimos-OSXTests */ = {
+			isa = PBXGroup;
+			children = (
+				892F9A871BE87589002F181F /* Nimble.framework */,
+				892F9A881BE87589002F181F /* Quick.framework */,
+				892F9A961BE9B445002F181F /* MathSpecs.swift */,
+				892F9A801BE87551002F181F /* Info.plist */,
+			);
+			path = "Deimos-OSXTests";
+			sourceTree = "<group>";
+		};
+		892F9A981BE9C53C002F181F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				892F9A921BE9B251002F181F /* MovementComponent.swift */,
+				892F9A941BE9B2ED002F181F /* PositionComponent.swift */,
+				892F9A991BE9C54F002F181F /* RenderComponent.swift */,
+				892F9A9B1BE9D061002F181F /* PhysicsComponent.swift */,
+				892F9AA31BEBCC57002F181F /* InputComponent.swift */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		892F9AA91BEBD501002F181F /* Player Input */ = {
+			isa = PBXGroup;
+			children = (
+				892F9AA61BEBD3E1002F181F /* InputSource.swift */,
+				892F9AAA1BEBD54A002F181F /* KeyboardControlInputSource.swift */,
+			);
+			name = "Player Input";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +258,7 @@
 				891CC5451BAB434B00661B66 /* Sources */,
 				891CC5461BAB434B00661B66 /* Frameworks */,
 				891CC5471BAB434B00661B66 /* Resources */,
+				891CC5731BAB489800661B66 /* Copy Carthage Libraries */,
 			);
 			buildRules = (
 			);
@@ -129,6 +276,7 @@
 				891CC55D1BAB434B00661B66 /* Sources */,
 				891CC55E1BAB434B00661B66 /* Frameworks */,
 				891CC55F1BAB434B00661B66 /* Resources */,
+				891CC5741BAB48D600661B66 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,12 +288,49 @@
 			productReference = 891CC5611BAB434B00661B66 /* DeimosTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		892F9A671BE87551002F181F /* Deimos-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 892F9A851BE87551002F181F /* Build configuration list for PBXNativeTarget "Deimos-OSX" */;
+			buildPhases = (
+				892F9A641BE87551002F181F /* Sources */,
+				892F9A651BE87551002F181F /* Frameworks */,
+				892F9A661BE87551002F181F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Deimos-OSX";
+			productName = "Deimos-OSX";
+			productReference = 892F9A681BE87551002F181F /* Deimos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		892F9A791BE87551002F181F /* Deimos-OSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 892F9A861BE87551002F181F /* Build configuration list for PBXNativeTarget "Deimos-OSXTests" */;
+			buildPhases = (
+				892F9A761BE87551002F181F /* Sources */,
+				892F9A771BE87551002F181F /* Frameworks */,
+				892F9A781BE87551002F181F /* Resources */,
+				892F9A8B1BE87597002F181F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				892F9A7C1BE87551002F181F /* PBXTargetDependency */,
+			);
+			name = "Deimos-OSXTests";
+			productName = "Deimos-OSXTests";
+			productReference = 892F9A7A1BE87551002F181F /* Deimos-OSXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		891CC5411BAB434B00661B66 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Rachel Brindle";
 				TargetAttributes = {
@@ -155,6 +340,13 @@
 					891CC5601BAB434B00661B66 = {
 						CreatedOnToolsVersion = 7.0;
 						TestTargetID = 891CC5481BAB434B00661B66;
+					};
+					892F9A671BE87551002F181F = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					892F9A791BE87551002F181F = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 892F9A671BE87551002F181F;
 					};
 				};
 			};
@@ -173,6 +365,8 @@
 			targets = (
 				891CC5481BAB434B00661B66 /* Deimos */,
 				891CC5601BAB434B00661B66 /* DeimosTests */,
+				892F9A671BE87551002F181F /* Deimos-OSX */,
+				892F9A791BE87551002F181F /* Deimos-OSXTests */,
 			);
 		};
 /* End PBXProject section */
@@ -182,10 +376,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				891CC54F1BAB434B00661B66 /* GameScene.sks in Resources */,
 				891CC55B1BAB434B00661B66 /* LaunchScreen.storyboard in Resources */,
 				891CC5581BAB434B00661B66 /* Assets.xcassets in Resources */,
-				891CC5561BAB434B00661B66 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,15 +388,50 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		892F9A661BE87551002F181F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				892F9A741BE87551002F181F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		892F9A781BE87551002F181F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		891CC5731BAB489800661B66 /* Copy Carthage Libraries */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/PureLayout.framework",
+			);
+			name = "Copy Carthage Libraries";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		891CC5451BAB434B00661B66 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				892F9AA71BEBD3E1002F181F /* InputSource.swift in Sources */,
 				891CC5511BAB434B00661B66 /* GameScene.swift in Sources */,
 				891CC5531BAB434B00661B66 /* GameViewController.swift in Sources */,
+				892F9AA41BEBCC57002F181F /* InputComponent.swift in Sources */,
 				891CC54D1BAB434B00661B66 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,7 +440,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				891CC5661BAB434B00661B66 /* DeimosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		892F9A641BE87551002F181F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				892F9A951BE9B2ED002F181F /* PositionComponent.swift in Sources */,
+				892F9A931BE9B251002F181F /* MovementComponent.swift in Sources */,
+				892F9A8F1BE877A1002F181F /* Character.swift in Sources */,
+				892F9AA51BEBCC57002F181F /* InputComponent.swift in Sources */,
+				892F9AAB1BEBD54A002F181F /* KeyboardControlInputSource.swift in Sources */,
+				892F9A6D1BE87551002F181F /* GameScene.swift in Sources */,
+				892F9AA81BEBD3E1002F181F /* InputSource.swift in Sources */,
+				892F9A9A1BE9C54F002F181F /* RenderComponent.swift in Sources */,
+				892F9A9C1BE9D061002F181F /* PhysicsComponent.swift in Sources */,
+				892F9A6B1BE87551002F181F /* AppDelegate.swift in Sources */,
+				892F9A911BE95B39002F181F /* Math.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		892F9A761BE87551002F181F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				892F9A971BE9B445002F181F /* MathSpecs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,23 +477,28 @@
 			target = 891CC5481BAB434B00661B66 /* Deimos */;
 			targetProxy = 891CC5621BAB434B00661B66 /* PBXContainerItemProxy */;
 		};
+		892F9A7C1BE87551002F181F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 892F9A671BE87551002F181F /* Deimos-OSX */;
+			targetProxy = 892F9A7B1BE87551002F181F /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		891CC5541BAB434B00661B66 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				891CC5551BAB434B00661B66 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		891CC5591BAB434B00661B66 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				891CC55A1BAB434B00661B66 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		892F9A721BE87551002F181F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				892F9A731BE87551002F181F /* Base */,
+			);
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -334,7 +591,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Deimos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rachelbrindle.Deimos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -345,7 +607,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Deimos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rachelbrindle.Deimos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,6 +624,10 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = DeimosTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rachelbrindle.DeimosTests;
@@ -369,11 +640,86 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = DeimosTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rachelbrindle.DeimosTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Deimos.app/Deimos";
+			};
+			name = Release;
+		};
+		892F9A811BE87551002F181F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Deimos-OSX/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rachelbrindle.Deimos-OSX";
+				PRODUCT_NAME = Deimos;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		892F9A821BE87551002F181F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Deimos-OSX/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rachelbrindle.Deimos-OSX";
+				PRODUCT_NAME = Deimos;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		892F9A831BE87551002F181F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = "Deimos-OSXTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rachelbrindle.Deimos-OSXTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Deimos-OSX.app/Contents/MacOS/Deimos-OSX";
+			};
+			name = Debug;
+		};
+		892F9A841BE87551002F181F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = "Deimos-OSXTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rachelbrindle.Deimos-OSXTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Deimos-OSX.app/Contents/MacOS/Deimos-OSX";
 			};
 			name = Release;
 		};
@@ -396,12 +742,30 @@
 				891CC56C1BAB434B00661B66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		891CC56D1BAB434B00661B66 /* Build configuration list for PBXNativeTarget "DeimosTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				891CC56E1BAB434B00661B66 /* Debug */,
 				891CC56F1BAB434B00661B66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		892F9A851BE87551002F181F /* Build configuration list for PBXNativeTarget "Deimos-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				892F9A811BE87551002F181F /* Debug */,
+				892F9A821BE87551002F181F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		892F9A861BE87551002F181F /* Build configuration list for PBXNativeTarget "Deimos-OSXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				892F9A831BE87551002F181F /* Debug */,
+				892F9A841BE87551002F181F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

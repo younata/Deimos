@@ -1,21 +1,18 @@
-//
-//  AppDelegate.swift
-//  Deimos
-//
-//  Created by Rachel Brindle on 9/17/15.
-//  Copyright © 2015 Rachel Brindle. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow?
+    lazy var window: UIWindow? = {
+        let window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window.makeKeyAndVisible()
+        return window
+    }()
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        self.window?.rootViewController = GameViewController()
         return true
     }
 
