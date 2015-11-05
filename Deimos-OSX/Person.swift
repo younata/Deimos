@@ -1,7 +1,7 @@
 import SpriteKit
 import GameplayKit
 
-class Person: GKEntity {
+final class Person: GKEntity {
     override init() {
         super.init()
 

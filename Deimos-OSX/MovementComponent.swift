@@ -30,13 +30,14 @@ class MovementComponent: GKComponent {
 
         guard let positionComponent = self.positionComponent, movement = nextMovement else { return }
 
-        let movementSpeed = speedMultiplier * (movement.running ? 2 : 1)
+        let movementSpeed: CGFloat = movement.running ? 2 : 1
 
-        let velocity = movement.displacement.normalize * movementSpeed
+        let velocity = movement.displacement * movementSpeed
 
         positionComponent.position += CGPoint(velocity * CGFloat(seconds))
-        if velocity != CGVector.zero {
-            positionComponent.rotation = atan2(-velocity.dx, velocity.dy)
+        let normalizedVelocity = velocity.normalize
+        if normalizedVelocity != CGVector.zero {
+            positionComponent.rotation = atan2(-normalizedVelocity.dx, normalizedVelocity.dy)
         }
     }
 }

@@ -1,44 +1,18 @@
 import SpriteKit
+import GameplayKit
 
-enum ArrowDirection {
-    case Up, Down, Left, Right
-
-    init?(keyCode: UInt16) {
-        if keyCode == 126 {
-            self = .Up
-        } else if keyCode == 125 {
-            self = .Down
-        } else if keyCode == 123 {
-            self = .Left
-        } else if keyCode == 124 {
-            self = .Right
-        } else {
-            return nil
-        }
-    }
-
-    var vector: CGVector {
-        let x: CGFloat, y: CGFloat
-        switch (self) {
-        case .Up:
-            (x, y) = (0, 1)
-        case .Down:
-            (x, y) = (0, -1)
-        case .Left:
-            (x, y) = (-1, 0)
-        case .Right:
-            (x, y) = (1, 0)
-        }
-        return CGVector(dx: x, dy: y)
-    }
-}
-
-class GameScene: SKScene {
+class MapScene: SKScene {
     lazy var person: Person = {
         return Person()
     }()
 
+    var npcs = [AIPerson]()
+
     let inputSource = KeyboardControlInputSource()
+
+    var polygonObstacles: [GKPolygonObstacle] {
+        return SKNode.obstaclesFromNodePhysicsBodies(self["obstacles"])
+    }
 
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
@@ -47,6 +21,24 @@ class GameScene: SKScene {
         if let node = person.componentForClass(RenderComponent.self)?.node {
             self.addChild(node)
         }
+
+        for i in 0..<1 {
+            let person: AIPerson
+            if i % 2 == 0 {
+                let width = size.width
+                let height = size.height
+                let points = [CGPoint(x: 20, y: 20), CGPoint(x: width - 20, y: 20), CGPoint(x: width - 20, y: height - 20), CGPoint(x: 20, y: height - 20)]
+                person = AIPerson(patrolPoints: points)
+            } else {
+                person = AIPerson(stand: CGPoint(x: 20, y: 20))
+            }
+            if let node = person.componentForClass(RenderComponent.self)?.node {
+                self.addChild(node)
+            }
+            person.agent.behavior = person.behaviorForMandate
+            npcs.append(person)
+        }
+
         if let input = person.componentForClass(InputComponent.self) {
             inputSource.delegate = input
         }
@@ -78,6 +70,9 @@ class GameScene: SKScene {
         let deltaTime = currentTime - lastUpdateTimeInterval
         lastUpdateTimeInterval = currentTime
 
-        person.updateWithDeltaTime(deltaTime)
+        let people: [GKEntity] = ([self.person] as [GKEntity]) + (npcs as [GKEntity])
+        for person in people {
+            person.updateWithDeltaTime(deltaTime)
+        }
     }
 }

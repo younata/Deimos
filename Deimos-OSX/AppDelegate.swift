@@ -9,7 +9,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         /* Pick a size for the scene */
-        let scene = GameScene()
+        let scene = MapScene()
         scene.backgroundColor = NSColor.whiteColor()
         scene.scaleMode = .AspectFill
 

@@ -1,8 +1,23 @@
 import CoreGraphics
+import simd
+
+extension float2 {
+    init(_ point: CGPoint) {
+        self.init(x: Float(point.x), y: Float(point.y))
+    }
+
+    init(_ vector: CGVector) {
+        self.init(x: Float(vector.dx), y: Float(vector.dy))
+    }
+}
 
 extension CGPoint {
     init(_ vector: CGVector) {
         self = CGPoint(x: vector.dx, y: vector.dy)
+    }
+
+    init(_ float: float2) {
+        self.init(x: CGFloat(float.x), y: CGFloat(float.y))
     }
 }
 
@@ -30,6 +45,10 @@ extension CGVector {
         } else {
             return CGVectorMake(dx / length, dy / length)
         }
+    }
+
+    init(_ float: float2) {
+        self.init(dx: CGFloat(float.x), dy: CGFloat(float.y))
     }
 }
 

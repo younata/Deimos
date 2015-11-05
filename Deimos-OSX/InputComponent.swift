@@ -22,7 +22,7 @@ class InputComponent: GKComponent {
 
 extension InputComponent: ControlInputSourceDelegate {
     func controlInputSource(controlInputSource: ControlInputSourceType, didUpdateWithMovement movementVelocity: CGVector) {
-        inputState.movement = MovementKind(movementVelocity)
+        inputState.movement = MovementKind(movementVelocity * 150)
     }
 
     func controlInputSource(controlInputSource: ControlInputSourceType, didUpdateRunning running: Bool) {}

@@ -19,13 +19,13 @@
 		891CC57A1BAB48FF00661B66 /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 891CC5761BAB48F800661B66 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		891CC57B1BAB48FF00661B66 /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 891CC5771BAB48F800661B66 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		892F9A6B1BE87551002F181F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9A6A1BE87551002F181F /* AppDelegate.swift */; };
-		892F9A6D1BE87551002F181F /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9A6C1BE87551002F181F /* GameScene.swift */; };
+		892F9A6D1BE87551002F181F /* MapScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9A6C1BE87551002F181F /* MapScene.swift */; };
 		892F9A741BE87551002F181F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 892F9A721BE87551002F181F /* MainMenu.xib */; };
 		892F9A891BE87589002F181F /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 892F9A871BE87589002F181F /* Nimble.framework */; };
 		892F9A8A1BE87589002F181F /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 892F9A881BE87589002F181F /* Quick.framework */; };
 		892F9A8C1BE875A5002F181F /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 892F9A871BE87589002F181F /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		892F9A8D1BE875A5002F181F /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 892F9A881BE87589002F181F /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		892F9A8F1BE877A1002F181F /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9A8E1BE877A1002F181F /* Character.swift */; };
+		892F9A8F1BE877A1002F181F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9A8E1BE877A1002F181F /* Person.swift */; };
 		892F9A911BE95B39002F181F /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9A901BE95B39002F181F /* Math.swift */; };
 		892F9A931BE9B251002F181F /* MovementComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9A921BE9B251002F181F /* MovementComponent.swift */; };
 		892F9A951BE9B2ED002F181F /* PositionComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9A941BE9B2ED002F181F /* PositionComponent.swift */; };
@@ -37,6 +37,9 @@
 		892F9AA71BEBD3E1002F181F /* InputSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9AA61BEBD3E1002F181F /* InputSource.swift */; };
 		892F9AA81BEBD3E1002F181F /* InputSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9AA61BEBD3E1002F181F /* InputSource.swift */; };
 		892F9AAB1BEBD54A002F181F /* KeyboardControlInputSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9AAA1BEBD54A002F181F /* KeyboardControlInputSource.swift */; };
+		892F9AB11BEBE4BE002F181F /* AIPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9AB01BEBE4BE002F181F /* AIPerson.swift */; };
+		892F9AB31BEC07DF002F181F /* AIBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9AB21BEC07DF002F181F /* AIBehavior.swift */; };
+		892F9AB41BEC07DF002F181F /* AIBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9AB21BEC07DF002F181F /* AIBehavior.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,14 +102,14 @@
 		891CC5771BAB48F800661B66 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = ../Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		892F9A681BE87551002F181F /* Deimos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Deimos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		892F9A6A1BE87551002F181F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		892F9A6C1BE87551002F181F /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		892F9A6C1BE87551002F181F /* MapScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScene.swift; sourceTree = "<group>"; };
 		892F9A731BE87551002F181F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		892F9A751BE87551002F181F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		892F9A7A1BE87551002F181F /* Deimos-OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Deimos-OSXTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		892F9A801BE87551002F181F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		892F9A871BE87589002F181F /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = ../Carthage/Build/Mac/Nimble.framework; sourceTree = "<group>"; };
 		892F9A881BE87589002F181F /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = ../Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
-		892F9A8E1BE877A1002F181F /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		892F9A8E1BE877A1002F181F /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		892F9A901BE95B39002F181F /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 		892F9A921BE9B251002F181F /* MovementComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovementComponent.swift; sourceTree = "<group>"; };
 		892F9A941BE9B2ED002F181F /* PositionComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionComponent.swift; sourceTree = "<group>"; };
@@ -116,6 +119,8 @@
 		892F9AA31BEBCC57002F181F /* InputComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputComponent.swift; sourceTree = "<group>"; };
 		892F9AA61BEBD3E1002F181F /* InputSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputSource.swift; sourceTree = "<group>"; };
 		892F9AAA1BEBD54A002F181F /* KeyboardControlInputSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardControlInputSource.swift; sourceTree = "<group>"; };
+		892F9AB01BEBE4BE002F181F /* AIPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AIPerson.swift; sourceTree = "<group>"; };
+		892F9AB21BEC07DF002F181F /* AIBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AIBehavior.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,8 +210,10 @@
 			isa = PBXGroup;
 			children = (
 				892F9A6A1BE87551002F181F /* AppDelegate.swift */,
-				892F9A6C1BE87551002F181F /* GameScene.swift */,
-				892F9A8E1BE877A1002F181F /* Character.swift */,
+				892F9A6C1BE87551002F181F /* MapScene.swift */,
+				892F9A8E1BE877A1002F181F /* Person.swift */,
+				892F9AB01BEBE4BE002F181F /* AIPerson.swift */,
+				892F9AB21BEC07DF002F181F /* AIBehavior.swift */,
 				892F9A981BE9C53C002F181F /* Components */,
 				892F9AA91BEBD501002F181F /* Player Input */,
 				892F9A901BE95B39002F181F /* Math.swift */,
@@ -429,6 +436,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				892F9AA71BEBD3E1002F181F /* InputSource.swift in Sources */,
+				892F9AB31BEC07DF002F181F /* AIBehavior.swift in Sources */,
 				891CC5511BAB434B00661B66 /* GameScene.swift in Sources */,
 				891CC5531BAB434B00661B66 /* GameViewController.swift in Sources */,
 				892F9AA41BEBCC57002F181F /* InputComponent.swift in Sources */,
@@ -449,15 +457,17 @@
 			files = (
 				892F9A951BE9B2ED002F181F /* PositionComponent.swift in Sources */,
 				892F9A931BE9B251002F181F /* MovementComponent.swift in Sources */,
-				892F9A8F1BE877A1002F181F /* Character.swift in Sources */,
+				892F9A8F1BE877A1002F181F /* Person.swift in Sources */,
 				892F9AA51BEBCC57002F181F /* InputComponent.swift in Sources */,
 				892F9AAB1BEBD54A002F181F /* KeyboardControlInputSource.swift in Sources */,
-				892F9A6D1BE87551002F181F /* GameScene.swift in Sources */,
+				892F9A6D1BE87551002F181F /* MapScene.swift in Sources */,
 				892F9AA81BEBD3E1002F181F /* InputSource.swift in Sources */,
 				892F9A9A1BE9C54F002F181F /* RenderComponent.swift in Sources */,
+				892F9AB11BEBE4BE002F181F /* AIPerson.swift in Sources */,
 				892F9A9C1BE9D061002F181F /* PhysicsComponent.swift in Sources */,
 				892F9A6B1BE87551002F181F /* AppDelegate.swift in Sources */,
 				892F9A911BE95B39002F181F /* Math.swift in Sources */,
+				892F9AB41BEC07DF002F181F /* AIBehavior.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
