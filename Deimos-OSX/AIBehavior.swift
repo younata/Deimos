@@ -6,10 +6,18 @@ class AIBehavior: GKBehavior {
         let behavior = AIBehavior()
 
         behavior.addAvoidObstaclesGoalForScene(scene)
-        behavior.addTargetSpeedGoal(agent.maxSpeed)
+        behavior.addTargetSpeedGoal(0)
 
-        let pathVectorPoints = [point].map(float2.init)
-        let path = GKPath(points: UnsafeMutablePointer<float2>(pathVectorPoints), count: 1, radius: Float(radius), cyclical: false)
+        let halfRadius = radius / 2
+        let points = [
+            CGPoint(x: point.x - halfRadius, y: point.y - halfRadius),
+            CGPoint(x: point.x + halfRadius, y: point.y - halfRadius),
+            CGPoint(x: point.x + halfRadius, y: point.y + halfRadius),
+            CGPoint(x: point.x - halfRadius, y: point.y + halfRadius),
+        ]
+
+        let pathVectorPoints = points.map(float2.init)
+        let path = GKPath(points: UnsafeMutablePointer<float2>(pathVectorPoints), count: pathVectorPoints.count, radius: Float(halfRadius), cyclical: false)
         behavior.setWeight(1.0, forGoal: GKGoal(toStayOnPath: path, maxPredictionTime: 1))
 
         return behavior

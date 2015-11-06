@@ -2,20 +2,25 @@ import CoreGraphics
 import GameplayKit
 import SpriteKit
 
-class AIPerson: GKEntity, GKAgentDelegate {
+class AIPerson: GKEntity, GKAgentDelegate, RulesComponentDelegate {
     enum Mandate {
         case patrol
         case standAtPoint(CGPoint)
     }
 
-    var mandate: Mandate
+    var mandate: Mandate {
+        didSet {
+            self.agent.behavior = behaviorForMandate
+        }
+    }
 
     var patrolPoints = [CGPoint]()
 
-    var agent: GKAgent2D {
-        guard let agent = componentForClass(GKAgent2D.self) else { fatalError("What are you doing, you EDJIT!?") }
+    lazy var agent: GKAgent2D = {
+        let agent = GKAgent2D()
+        self.addComponent(agent)
         return agent
-    }
+    }()
 
     var behaviorForMandate: GKBehavior {
         guard let mapScene = componentForClass(RenderComponent.self)?.node.scene as? MapScene else {
@@ -60,28 +65,30 @@ class AIPerson: GKEntity, GKAgentDelegate {
         render.node.physicsBody = physicsBody
         let physics = PhysicsComponent(physicsBody: physicsBody)
 
-        for component in [movement, position, render, physics] {
-            addComponent(component)
-        }
-
-        let agent = GKAgent2D()
-
         agent.delegate = self
         agent.maxSpeed = 150
         agent.maxAcceleration = 250
         agent.mass = 0.5
         agent.radius = 20
 
-        addComponent(agent)
+        let rules = RulesComponent(rules: [
+            PlayerNearRule(),
+            PlayerMehRule(),
+            PlayerFarRule(),
+            ])
+        rules.delegate = self
 
-        agent.behavior = behaviorForMandate
+        for component in [movement, position, render, physics, agent, rules] {
+            addComponent(component)
+        }
     }
+
+    // MARK: GKAgentDelegate
 
     func agentWillUpdate(_: GKAgent) {
         // update agent position/rotation
         guard let position = self.componentForClass(PositionComponent.self) else { return }
         agent.position = float2(position.position)
-//        agent.rotation = Float(position.rotation)
     }
 
     func agentDidUpdate(_: GKAgent) {
@@ -92,6 +99,32 @@ class AIPerson: GKEntity, GKAgentDelegate {
             positionComponent.rotation = atan2(-velocity.dx, velocity.dy)
         } else {
             positionComponent.rotation = CGFloat(agent.rotation)
+        }
+    }
+
+    // MARK: RulesComponentDelegate
+
+    func rulesComponent(rulesComponent: RulesComponent, didFinishEvaluatingRuleSystem ruleSystem: GKRuleSystem) {
+        let playerNear = ruleSystem.minimumGradeForFacts([Fact.PlayerNear.rawValue])
+
+        let playerDistant = ruleSystem.minimumGradeForFacts([Fact.PlayerFar.rawValue, Fact.PlayerMeh.rawValue])
+
+        print("near: \(playerNear) - distance: \(playerDistant)")
+
+        if playerNear > playerDistant {
+            switch mandate {
+            case .standAtPoint(_): break
+            default:
+                guard let position = self.componentForClass(PositionComponent.self) else { return }
+                mandate = .standAtPoint(position.position)
+                break
+            }
+        } else {
+            switch mandate {
+            case .patrol: break
+            default:
+                mandate = .patrol
+            }
         }
     }
 }

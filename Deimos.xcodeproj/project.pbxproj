@@ -40,6 +40,14 @@
 		892F9AB11BEBE4BE002F181F /* AIPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9AB01BEBE4BE002F181F /* AIPerson.swift */; };
 		892F9AB31BEC07DF002F181F /* AIBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9AB21BEC07DF002F181F /* AIBehavior.swift */; };
 		892F9AB41BEC07DF002F181F /* AIBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9AB21BEC07DF002F181F /* AIBehavior.swift */; };
+		892F9AB61BEC215A002F181F /* RulesComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9AB51BEC215A002F181F /* RulesComponent.swift */; };
+		892F9AB71BEC215A002F181F /* RulesComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9AB51BEC215A002F181F /* RulesComponent.swift */; };
+		892F9AB91BEC234D002F181F /* AIRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9AB81BEC234D002F181F /* AIRules.swift */; };
+		892F9ABA1BEC234D002F181F /* AIRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9AB81BEC234D002F181F /* AIRules.swift */; };
+		892F9ABD1BEC2A3E002F181F /* MapSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9ABC1BEC2A3E002F181F /* MapSnapshot.swift */; };
+		892F9ABE1BEC2A3E002F181F /* MapSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9ABC1BEC2A3E002F181F /* MapSnapshot.swift */; };
+		892F9AC01BEC34F5002F181F /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9ABF1BEC34F5002F181F /* Configuration.swift */; };
+		892F9AC11BEC34F5002F181F /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9ABF1BEC34F5002F181F /* Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +129,10 @@
 		892F9AAA1BEBD54A002F181F /* KeyboardControlInputSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardControlInputSource.swift; sourceTree = "<group>"; };
 		892F9AB01BEBE4BE002F181F /* AIPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AIPerson.swift; sourceTree = "<group>"; };
 		892F9AB21BEC07DF002F181F /* AIBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AIBehavior.swift; sourceTree = "<group>"; };
+		892F9AB51BEC215A002F181F /* RulesComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RulesComponent.swift; sourceTree = "<group>"; };
+		892F9AB81BEC234D002F181F /* AIRules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AIRules.swift; sourceTree = "<group>"; };
+		892F9ABC1BEC2A3E002F181F /* MapSnapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapSnapshot.swift; sourceTree = "<group>"; };
+		892F9ABF1BEC34F5002F181F /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,8 +226,10 @@
 				892F9A8E1BE877A1002F181F /* Person.swift */,
 				892F9AB01BEBE4BE002F181F /* AIPerson.swift */,
 				892F9AB21BEC07DF002F181F /* AIBehavior.swift */,
+				892F9ABF1BEC34F5002F181F /* Configuration.swift */,
 				892F9A981BE9C53C002F181F /* Components */,
 				892F9AA91BEBD501002F181F /* Player Input */,
+				892F9ABB1BEC2350002F181F /* Rules */,
 				892F9A901BE95B39002F181F /* Math.swift */,
 				892F9A721BE87551002F181F /* MainMenu.xib */,
 				892F9A751BE87551002F181F /* Info.plist */,
@@ -242,6 +256,7 @@
 				892F9A991BE9C54F002F181F /* RenderComponent.swift */,
 				892F9A9B1BE9D061002F181F /* PhysicsComponent.swift */,
 				892F9AA31BEBCC57002F181F /* InputComponent.swift */,
+				892F9AB51BEC215A002F181F /* RulesComponent.swift */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -253,6 +268,15 @@
 				892F9AAA1BEBD54A002F181F /* KeyboardControlInputSource.swift */,
 			);
 			name = "Player Input";
+			sourceTree = "<group>";
+		};
+		892F9ABB1BEC2350002F181F /* Rules */ = {
+			isa = PBXGroup;
+			children = (
+				892F9AB81BEC234D002F181F /* AIRules.swift */,
+				892F9ABC1BEC2A3E002F181F /* MapSnapshot.swift */,
+			);
+			name = Rules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -440,7 +464,11 @@
 				891CC5511BAB434B00661B66 /* GameScene.swift in Sources */,
 				891CC5531BAB434B00661B66 /* GameViewController.swift in Sources */,
 				892F9AA41BEBCC57002F181F /* InputComponent.swift in Sources */,
+				892F9AB61BEC215A002F181F /* RulesComponent.swift in Sources */,
+				892F9AC01BEC34F5002F181F /* Configuration.swift in Sources */,
+				892F9AB91BEC234D002F181F /* AIRules.swift in Sources */,
 				891CC54D1BAB434B00661B66 /* AppDelegate.swift in Sources */,
+				892F9ABD1BEC2A3E002F181F /* MapSnapshot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,9 +488,13 @@
 				892F9A8F1BE877A1002F181F /* Person.swift in Sources */,
 				892F9AA51BEBCC57002F181F /* InputComponent.swift in Sources */,
 				892F9AAB1BEBD54A002F181F /* KeyboardControlInputSource.swift in Sources */,
+				892F9ABA1BEC234D002F181F /* AIRules.swift in Sources */,
+				892F9AB71BEC215A002F181F /* RulesComponent.swift in Sources */,
 				892F9A6D1BE87551002F181F /* MapScene.swift in Sources */,
 				892F9AA81BEBD3E1002F181F /* InputSource.swift in Sources */,
 				892F9A9A1BE9C54F002F181F /* RenderComponent.swift in Sources */,
+				892F9AC11BEC34F5002F181F /* Configuration.swift in Sources */,
+				892F9ABE1BEC2A3E002F181F /* MapSnapshot.swift in Sources */,
 				892F9AB11BEBE4BE002F181F /* AIPerson.swift in Sources */,
 				892F9A9C1BE9D061002F181F /* PhysicsComponent.swift in Sources */,
 				892F9A6B1BE87551002F181F /* AppDelegate.swift in Sources */,

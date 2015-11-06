@@ -8,6 +8,10 @@ class MapScene: SKScene {
 
     var npcs = [AIPerson]()
 
+    var entities: [GKEntity] {
+        return [person] + npcs
+    }
+
     let inputSource = KeyboardControlInputSource()
 
     var polygonObstacles: [GKPolygonObstacle] {
@@ -70,8 +74,7 @@ class MapScene: SKScene {
         let deltaTime = currentTime - lastUpdateTimeInterval
         lastUpdateTimeInterval = currentTime
 
-        let people: [GKEntity] = ([self.person] as [GKEntity]) + (npcs as [GKEntity])
-        for person in people {
+        for person in self.entities {
             person.updateWithDeltaTime(deltaTime)
         }
     }
