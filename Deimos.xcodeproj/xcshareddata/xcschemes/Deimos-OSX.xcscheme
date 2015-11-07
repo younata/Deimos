@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "892F9A671BE87551002F181F"
-               BuildableName = "Deimos-OSX.app"
+               BuildableName = "Deimos.app"
                BlueprintName = "Deimos-OSX"
                ReferencedContainer = "container:Deimos.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "892F9A671BE87551002F181F"
-            BuildableName = "Deimos-OSX.app"
+            BuildableName = "Deimos.app"
             BlueprintName = "Deimos-OSX"
             ReferencedContainer = "container:Deimos.xcodeproj">
          </BuildableReference>
@@ -66,7 +66,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "892F9A671BE87551002F181F"
-            BuildableName = "Deimos-OSX.app"
+            BuildableName = "Deimos.app"
             BlueprintName = "Deimos-OSX"
             ReferencedContainer = "container:Deimos.xcodeproj">
          </BuildableReference>
@@ -85,7 +85,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "892F9A671BE87551002F181F"
-            BuildableName = "Deimos-OSX.app"
+            BuildableName = "Deimos.app"
             BlueprintName = "Deimos-OSX"
             ReferencedContainer = "container:Deimos.xcodeproj">
          </BuildableReference>

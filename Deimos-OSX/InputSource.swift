@@ -25,7 +25,6 @@ protocol ControlInputSourceGameStateDelegate: class {
 
 protocol ControlInputSourceDelegate: class {
     func controlInputSource(controlInputSource: ControlInputSourceType, didUpdateWithMovement movementVelocity: CGVector)
-    func controlInputSource(controlInputSource: ControlInputSourceType, didUpdateRunning running: Bool)
 
     func controlInputSourceDidSelect(controlInputSource: ControlInputSourceType)
 }

@@ -1,7 +1,7 @@
 import SpriteKit
 import GameplayKit
 
-class MapScene: SKScene {
+class MapScene: SKScene, SKPhysicsContactDelegate {
     lazy var person: Person = {
         return Person()
     }()
@@ -14,34 +14,42 @@ class MapScene: SKScene {
 
     let inputSource = KeyboardControlInputSource()
 
-    var polygonObstacles: [GKPolygonObstacle] {
-        return SKNode.obstaclesFromNodePhysicsBodies(self["obstacles"])
+    // MARK: Pathfinding
+
+    let graph = GKObstacleGraph(obstacles: [], bufferRadius: Float(Configuration.unitRadius))
+
+    lazy var obstacleNodes: [SKNode] = self["//*"]
+
+    lazy var polygonObstacles: [GKPolygonObstacle] = SKNode.obstaclesFromNodePhysicsBodies(self.obstacleNodes)
+
+    // MARK: Pathfinding Debug
+
+    var graphLayer = SKNode()
+    var debugObstacleLayer = SKNode()
+
+    // blah
+
+    func mapBoundsNode() -> SKNode {
+        let node = SKNode()
+
+        node.physicsBody = SKPhysicsBody(edgeLoopFromRect: self.frame)
+        node.name = "obstacle"
+
+        return node
     }
 
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
+        self.addChild(self.mapBoundsNode())
         self.physicsWorld.gravity = CGVector(dx: 0, dy: 0)
         person.componentForClass(PositionComponent.self)?.position = CGPoint(x: CGRectGetMidX(self.frame), y: CGRectGetMidY(self.frame))
         if let node = person.componentForClass(RenderComponent.self)?.node {
             self.addChild(node)
         }
 
-        for i in 0..<1 {
-            let person: AIPerson
-            if i % 2 == 0 {
-                let width = size.width
-                let height = size.height
-                let points = [CGPoint(x: 20, y: 20), CGPoint(x: width - 20, y: 20), CGPoint(x: width - 20, y: height - 20), CGPoint(x: 20, y: height - 20)]
-                person = AIPerson(patrolPoints: points)
-            } else {
-                person = AIPerson(stand: CGPoint(x: 20, y: 20))
-            }
-            if let node = person.componentForClass(RenderComponent.self)?.node {
-                self.addChild(node)
-            }
-            person.agent.behavior = person.behaviorForMandate
-            npcs.append(person)
-        }
+        self.addChild(self.graphLayer)
+        self.graph.addObstacles(self.polygonObstacles)
+        self.drawDebugGraph()
 
         if let input = person.componentForClass(InputComponent.self) {
             inputSource.delegate = input
@@ -76,6 +84,38 @@ class MapScene: SKScene {
 
         for person in self.entities {
             person.updateWithDeltaTime(deltaTime)
+        }
+    }
+
+    func didBeginContact(contact: SKPhysicsContact) {
+    }
+
+    func didEndContact(contact: SKPhysicsContact) {
+    }
+
+    private func handleContact(contact: SKPhysicsContact, contactCallback: (ContactNotifiable, GKEntity) -> Void) {
+        guard let colliderA = ColliderType(rawValue: Int(contact.bodyA.categoryBitMask)),
+            colliderB = ColliderType(rawValue: Int(contact.bodyB.categoryBitMask)) else {
+                return
+        }
+
+        let shouldCallABack = colliderA.shouldNotifyOnContactWithColliderType(colliderB)
+        let shouldCallBBack = colliderB.shouldNotifyOnContactWithColliderType(colliderA)
+    }
+}
+
+extension MapScene {
+    func drawDebugGraph() {
+        for node in graph.nodes as! [GKGraphNode2D] {
+            for destination in node.connectedNodes as! [GKGraphNode2D] {
+                let points = [CGPoint(node.position), CGPoint(destination.position)]
+
+                let shapeNode = SKShapeNode(points: UnsafeMutablePointer<CGPoint>(points), count: 2)
+                shapeNode.strokeColor = SKColor(white: 0.0, alpha: 0.1)
+                shapeNode.lineWidth = 2.0
+                shapeNode.zPosition = -1
+                graphLayer.addChild(shapeNode)
+            }
         }
     }
 }

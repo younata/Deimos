@@ -13,13 +13,28 @@ final class Person: GKEntity {
         let movement = MovementComponent()
         let position = PositionComponent()
 
-        let node = SKLabelNode(text: "A")
-        node.fontColor = NSColor.blackColor()
-        let render = RenderComponent(node: node)
+        let radius = Configuration.unitRadius
 
-        let physicsBody = SKPhysicsBody()
+        let trianglePath = CGPathCreateMutable()
+        CGPathMoveToPoint(trianglePath, nil, 0, radius)
+        let x = radius * (2.0 / 3.0)
+        let y = -radius * (2.0 / 3.0)
+        CGPathAddLineToPoint(trianglePath, nil, x, y)
+        CGPathAddLineToPoint(trianglePath, nil, -x, y)
+        CGPathAddLineToPoint(trianglePath, nil, 0, radius)
+        let triangle = SKShapeNode(path: trianglePath)
+        let color = SKColor.blackColor()
+        triangle.strokeColor = color
+
+        let circle = SKShapeNode(circleOfRadius: radius)
+        circle.strokeColor = color
+        triangle.addChild(circle)
+
+        let render = RenderComponent(node: triangle)
+
+        let physicsBody = SKPhysicsBody(circleOfRadius: radius)
         render.node.physicsBody = physicsBody
-        let physics = PhysicsComponent(physicsBody: physicsBody)
+        let physics = PhysicsComponent(physicsBody: physicsBody, colliderType: .Player)
 
         let input = InputComponent()
 

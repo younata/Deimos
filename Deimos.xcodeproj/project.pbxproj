@@ -48,6 +48,8 @@
 		892F9ABE1BEC2A3E002F181F /* MapSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9ABC1BEC2A3E002F181F /* MapSnapshot.swift */; };
 		892F9AC01BEC34F5002F181F /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9ABF1BEC34F5002F181F /* Configuration.swift */; };
 		892F9AC11BEC34F5002F181F /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9ABF1BEC34F5002F181F /* Configuration.swift */; };
+		89FF97921BED6B00000080F7 /* ColliderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FF97911BED6B00000080F7 /* ColliderType.swift */; };
+		89FF97931BED6B00000080F7 /* ColliderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FF97911BED6B00000080F7 /* ColliderType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -133,6 +135,7 @@
 		892F9AB81BEC234D002F181F /* AIRules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AIRules.swift; sourceTree = "<group>"; };
 		892F9ABC1BEC2A3E002F181F /* MapSnapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapSnapshot.swift; sourceTree = "<group>"; };
 		892F9ABF1BEC34F5002F181F /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		89FF97911BED6B00000080F7 /* ColliderType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColliderType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +230,7 @@
 				892F9AB01BEBE4BE002F181F /* AIPerson.swift */,
 				892F9AB21BEC07DF002F181F /* AIBehavior.swift */,
 				892F9ABF1BEC34F5002F181F /* Configuration.swift */,
+				89FF97911BED6B00000080F7 /* ColliderType.swift */,
 				892F9A981BE9C53C002F181F /* Components */,
 				892F9AA91BEBD501002F181F /* Player Input */,
 				892F9ABB1BEC2350002F181F /* Rules */,
@@ -468,6 +472,7 @@
 				892F9AC01BEC34F5002F181F /* Configuration.swift in Sources */,
 				892F9AB91BEC234D002F181F /* AIRules.swift in Sources */,
 				891CC54D1BAB434B00661B66 /* AppDelegate.swift in Sources */,
+				89FF97921BED6B00000080F7 /* ColliderType.swift in Sources */,
 				892F9ABD1BEC2A3E002F181F /* MapSnapshot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,6 +501,7 @@
 				892F9AC11BEC34F5002F181F /* Configuration.swift in Sources */,
 				892F9ABE1BEC2A3E002F181F /* MapSnapshot.swift in Sources */,
 				892F9AB11BEBE4BE002F181F /* AIPerson.swift in Sources */,
+				89FF97931BED6B00000080F7 /* ColliderType.swift in Sources */,
 				892F9A9C1BE9D061002F181F /* PhysicsComponent.swift in Sources */,
 				892F9A6B1BE87551002F181F /* AppDelegate.swift in Sources */,
 				892F9A911BE95B39002F181F /* Math.swift in Sources */,
@@ -802,6 +808,7 @@
 				892F9A821BE87551002F181F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		892F9A861BE87551002F181F /* Build configuration list for PBXNativeTarget "Deimos-OSXTests" */ = {
 			isa = XCConfigurationList;
@@ -810,6 +817,7 @@
 				892F9A841BE87551002F181F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

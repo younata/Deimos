@@ -1,13 +1,10 @@
 import GameplayKit
 
 struct MovementKind {
-    let running: Bool
-
     let displacement: CGVector
 
-    init(_ displacement: CGVector, running: Bool = false) {
+    init(_ displacement: CGVector) {
         self.displacement = displacement
-        self.running = running
     }
 }
 
@@ -15,7 +12,7 @@ class MovementComponent: GKComponent {
 
     var nextMovement: MovementKind?
 
-    private let speedMultiplier: CGFloat = 150 // points/second
+    let maximumSteering = CGFloat(M_2_PI / 64)
 
     var positionComponent: PositionComponent? {
         return self.entity?.componentForClass(PositionComponent.self)
@@ -30,14 +27,18 @@ class MovementComponent: GKComponent {
 
         guard let positionComponent = self.positionComponent, movement = nextMovement else { return }
 
-        let movementSpeed: CGFloat = movement.running ? 2 : 1
+        let steering = -movement.displacement.dx * maximumSteering
 
-        let velocity = movement.displacement * movementSpeed
+        let speedMultiplier: CGFloat = 150
+
+        let forwardSpeed = movement.displacement.dy
+        let angularSpeed = movement.displacement.dy * sin(steering) * speedMultiplier
+
+        positionComponent.rotation += angularSpeed * CGFloat(seconds)
+        let rotation = positionComponent.rotation
+
+        let velocity = CGVector(dx: forwardSpeed * sin(-rotation), dy: forwardSpeed * cos(-rotation)) * speedMultiplier
 
         positionComponent.position += CGPoint(velocity * CGFloat(seconds))
-        let normalizedVelocity = velocity.normalize
-        if normalizedVelocity != CGVector.zero {
-            positionComponent.rotation = atan2(-normalizedVelocity.dx, normalizedVelocity.dy)
-        }
     }
 }
