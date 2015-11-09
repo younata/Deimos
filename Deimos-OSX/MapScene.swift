@@ -18,7 +18,7 @@ class MapScene: SKScene, SKPhysicsContactDelegate {
 
     let graph = GKObstacleGraph(obstacles: [], bufferRadius: Float(Configuration.unitRadius))
 
-    lazy var obstacleNodes: [SKNode] = self["//*"]
+    lazy var obstacleNodes: [SKNode] = []
 
     lazy var polygonObstacles: [GKPolygonObstacle] = SKNode.obstaclesFromNodePhysicsBodies(self.obstacleNodes)
 
@@ -40,8 +40,11 @@ class MapScene: SKScene, SKPhysicsContactDelegate {
 
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
-        self.addChild(self.mapBoundsNode())
         self.physicsWorld.gravity = CGVector(dx: 0, dy: 0)
+
+        let maze = MazeGenerator(size: (x: 10, y: 10))
+        self.addChild(maze.generatedNode)
+
         person.componentForClass(PositionComponent.self)?.position = CGPoint(x: CGRectGetMidX(self.frame), y: CGRectGetMidY(self.frame))
         if let node = person.componentForClass(RenderComponent.self)?.node {
             self.addChild(node)

@@ -50,6 +50,8 @@
 		892F9AC11BEC34F5002F181F /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892F9ABF1BEC34F5002F181F /* Configuration.swift */; };
 		89FF97921BED6B00000080F7 /* ColliderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FF97911BED6B00000080F7 /* ColliderType.swift */; };
 		89FF97931BED6B00000080F7 /* ColliderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FF97911BED6B00000080F7 /* ColliderType.swift */; };
+		89FF979B1BEDBA67000080F7 /* MazeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FF979A1BEDBA67000080F7 /* MazeGenerator.swift */; };
+		89FF979C1BEDBA67000080F7 /* MazeGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FF979A1BEDBA67000080F7 /* MazeGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +138,7 @@
 		892F9ABC1BEC2A3E002F181F /* MapSnapshot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapSnapshot.swift; sourceTree = "<group>"; };
 		892F9ABF1BEC34F5002F181F /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		89FF97911BED6B00000080F7 /* ColliderType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColliderType.swift; sourceTree = "<group>"; };
+		89FF979A1BEDBA67000080F7 /* MazeGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MazeGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +234,7 @@
 				892F9AB21BEC07DF002F181F /* AIBehavior.swift */,
 				892F9ABF1BEC34F5002F181F /* Configuration.swift */,
 				89FF97911BED6B00000080F7 /* ColliderType.swift */,
+				89FF979A1BEDBA67000080F7 /* MazeGenerator.swift */,
 				892F9A981BE9C53C002F181F /* Components */,
 				892F9AA91BEBD501002F181F /* Player Input */,
 				892F9ABB1BEC2350002F181F /* Rules */,
@@ -469,6 +473,7 @@
 				891CC5531BAB434B00661B66 /* GameViewController.swift in Sources */,
 				892F9AA41BEBCC57002F181F /* InputComponent.swift in Sources */,
 				892F9AB61BEC215A002F181F /* RulesComponent.swift in Sources */,
+				89FF979B1BEDBA67000080F7 /* MazeGenerator.swift in Sources */,
 				892F9AC01BEC34F5002F181F /* Configuration.swift in Sources */,
 				892F9AB91BEC234D002F181F /* AIRules.swift in Sources */,
 				891CC54D1BAB434B00661B66 /* AppDelegate.swift in Sources */,
@@ -506,6 +511,7 @@
 				892F9A6B1BE87551002F181F /* AppDelegate.swift in Sources */,
 				892F9A911BE95B39002F181F /* Math.swift in Sources */,
 				892F9AB41BEC07DF002F181F /* AIBehavior.swift in Sources */,
+				89FF979C1BEDBA67000080F7 /* MazeGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
